@@ -46,6 +46,10 @@ span {
 	color: white !important;
 }
 
+.register-button {
+	color: var(--bluish) !important;
+}
+
 .caption-color {
 	color: #09a2a2 !important;
 }
