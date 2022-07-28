@@ -16,9 +16,10 @@
 	--header-black: #1d1d1d;
 	--span-color: #09a2a2;
 	--price: #289BDE;
+	--explore: #F4FAFD;
 }
-/* Global Variables End */
 
+/* Global Variables End */
 
 /* Common Styles Start */
 body {
@@ -32,13 +33,14 @@ body {
 #brand-logo {
 	font-size: xx-large;
 }
+
 .headings {
 	font-family: var(--header-font);
 	color: var(--header-black);
 }
 
 span {
-	color: var(--span-color);
+	color: var(--span-color) !important;
 }
 
 .btn-bg {
@@ -54,6 +56,10 @@ span {
 	color: #09a2a2 !important;
 }
 
+.explore {
+	background-color: var(--explore);
+}
+
 .caption-title {
 	font-size: 70px;
 }
@@ -65,12 +71,21 @@ span {
 .stars {
 	color: gold;
 }
-.smaller {
-	height: 3px;
-	width: 3px;
-}
 
 footer {
 	background-color: var(--dark-black);
 }
+
 /* Common Styles End */
+
+
+/* Media Queries Start */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.carousel-title {
+		font-size: 2em;
+	}
+	.carousel-info {
+		font-size: 30px;
+	}
+}
+/* Media Queries End */
