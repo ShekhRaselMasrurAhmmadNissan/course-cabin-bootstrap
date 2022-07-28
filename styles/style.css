@@ -1,0 +1,59 @@
+/* Importing the Fonts Start */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,500;1,600;1,700&family=Stylish&display=swap');
+/* Font Import End */
+
+
+/* Global Variables Start */
+:root {
+	/* Fonts */
+	--header-font: 'Bebas Neue', cursive;
+	--primary-font: 'Josefin Sans', sans-serif;
+	--footer-font: 'Stylish', sans-serif;
+
+	/* Colors */
+	--bluish: #289BDE;
+	--dark-black: #161616;
+	--header-black: #1d1d1d;
+	--span-color: #09a2a2;
+}
+/* Global Variables End */
+
+
+/* Common Styles Start */
+body {
+	font-family: var(--primary-font);
+}
+
+.custom-margin {
+	margin-top: 100px;
+}
+
+#brand-logo {
+	font-size: xx-large;
+}
+.headings {
+	font-family: var(--header-font);
+	color: var(--header-black);
+}
+
+span {
+	color: var(--span-color);
+}
+
+.btn-bg {
+	background-color: var(--bluish) !important;
+	color: white !important;
+}
+
+.caption-color {
+	color: #09a2a2 !important;
+}
+
+.caption-title {
+	font-size: 70px;
+}
+
+footer {
+	background-color: var(--dark-black);
+}
+/* Common Styles End */

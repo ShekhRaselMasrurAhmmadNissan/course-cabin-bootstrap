@@ -5,6 +5,8 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Bootstrap demo</title>
+		<!-- Link the CSS -->
+		<link rel="stylesheet" href="./styles/style.css">
 
 		<!-- Link the Bootstrap CDN -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -12,49 +14,124 @@
 	</head>
 
 	<body>
-		<!-- Navbar Start -->
-		<div id="nav-bar" class="fixed-top">
-			<nav class="navbar navbar-expand-lg bg-light">
-				<div class="container container-fluid">
-					<a class="navbar-brand" href="#">Course Cabin</a>
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-						aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-					<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Home</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Courses</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Explore</a>
-							</li>
-							<li class="nav-item dropdown">
-								<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-									aria-expanded="false">
-									Successes
-								</a>
-								<ul class="dropdown-menu">
-									<li><a class="dropdown-item" href="#">Success</a></li>
-									<li><a class="dropdown-item" href="#">Feedback</a></li>
-								</ul>
+		<!-- Header Start -->
+		<header class="container custom-margin">
+			<!-- Navbar Start -->
+			<div id="nav-bar" class="fixed-top">
+				<nav class="navbar navbar-expand-lg bg-light">
+					<div class="container container-fluid">
+						<a class="navbar-brand headings fs-1" href="#"><span>Course</span> Cabin</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+							aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+							<ul class="navbar-nav">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="#">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Courses</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Explore</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+										aria-expanded="false">
+										Successes
+									</a>
+									<ul class="dropdown-menu">
+										<li><a class="dropdown-item" href="#">Success</a></li>
+										<li><a class="dropdown-item" href="#">Feedback</a></li>
+									</ul>
 								<li class="nav-item">
 									<a class="nav-link" href="#">Frequent Questions</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">Register Now</a>
+									<a class="nav-link btn btn-bg" href="#">Register Now</a>
 								</li>
-							</li>
-						</ul>
+								</li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</nav>
-		</div>
-		<!-- navbar End -->
+				</nav>
+			</div>
+			<!-- navbar End -->
 
+			<!-- Carousel Slider Container Start -->
+			<div class="carousel-slider container">
+				<!-- Carousel Start -->
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+					<!-- Carousel Indicators Start -->
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+							class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+							aria-label="Slide 2"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+							aria-label="Slide 3"></button>
+					</div>
+					<!-- Carousel Indicators End -->
+
+					<!-- Carousel Inner Section Start -->
+					<div class="carousel-inner">
+						<!-- Single Item Start -->
+						<div class="carousel-item active">
+							<img src="./images/cover/cover-1.png" class="d-block w-100" alt="...">
+							<div class="carousel-caption">
+								<h5>First slide label</h5>
+								<p>Some representative placeholder content for the first slide.</p>
+							</div>
+						</div>
+						<!-- Single Item End -->
+
+						<!-- Single Item Start -->
+						<div class="carousel-item">
+							<img src="./images/cover/cover-2.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption">
+								<h5>Second slide label</h5>
+								<p>Some representative placeholder content for the second slide.</p>
+							</div>
+						</div>
+						<!-- Single Item End -->
+
+						<!-- Single Item Start -->
+						<div class="carousel-item">
+							<img src="./images/cover/cover-3.jpg" class="d-block w-100" alt="...">
+							<div class="carousel-caption">
+								<h5>Third slide label</h5>
+								<p>Some representative placeholder content for the third slide.</p>
+							</div>
+						</div>
+						<!-- Single Item End -->
+					</div>
+					<!-- Carousel Inner Section End -->
+
+					<!-- Carousel Controller Start -->
+					<!-- Previous Button Start -->
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<!-- Previous Button End -->
+					<!-- Next Button Start -->
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+					<!-- Next Button End -->
+					<!-- Carousel Controller End -->
+				</div>
+				<!-- Carousel End -->
+			</div>
+			<!-- Carousel Slider Container End -->
+
+		</header>
+		<!-- Header End -->
 
 		<!-- ---------------------------------------------------------------------------------------- -->
 		<!-- ---------------------------------------------------------------------------------------- -->
