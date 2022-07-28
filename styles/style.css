@@ -15,6 +15,7 @@
 	--dark-black: #161616;
 	--header-black: #1d1d1d;
 	--span-color: #09a2a2;
+	--price: #289BDE;
 }
 /* Global Variables End */
 
@@ -51,6 +52,10 @@ span {
 
 .caption-title {
 	font-size: 70px;
+}
+
+.price {
+	color: var(--price);
 }
 
 footer {
